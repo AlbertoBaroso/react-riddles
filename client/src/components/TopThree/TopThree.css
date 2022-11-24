@@ -1,0 +1,26 @@
+.user--placements__gold,
+.user--placements__silver,
+.user--placements__bronze {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.user--placements__gold {
+    color: gold;
+}
+
+.user--placements__silver {
+    color: silver;
+}
+
+.user--placements__bronze {
+    color: #f5a623;
+}
+
+
+@media screen and (max-width: 575px) {
+    .invert-sm {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

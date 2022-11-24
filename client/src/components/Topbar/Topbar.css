@@ -1,0 +1,18 @@
+.navbar--links a {
+    color: var(--link-text-color);
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0 1em;
+}
+
+.navbar--links a.active {
+    color: var(--active-link-text-color);
+}
+
+.navbar--icon {
+    font-size: 1.5em;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

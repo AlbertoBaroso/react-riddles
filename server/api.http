@@ -1,0 +1,58 @@
+# USERS
+
+### Login
+
+POST http://localhost:3001/api/v1/users/login
+Content-Type: application/json
+
+{
+  "username": "John",
+  "password": "password"
+}
+
+### Logout
+
+DELETE http://localhost:3001/api/v1/users/logout
+
+### Get Top 3
+
+GET http://localhost:3001/api/v1/users/top3
+
+
+# RIDDLES
+
+### Get All Riddles
+
+GET http://localhost:3001/api/v1/riddles
+
+
+### Get riddles of authenticated user
+
+GET http://localhost:3001/api/v1/riddles/mine
+
+### Get Riddle by ID
+
+GET http://localhost:3001/api/v1/riddles/1
+
+### Create a new riddle
+
+POST http://localhost:3001/api/v1/riddles/
+Content-Type: application/json
+
+{
+ "question": "Riddle question",
+ "response": "Response",
+ "firstHint": "First hint",
+ "secondHint": "Second hint",
+ "difficulty": "hard",
+ "duration": 100
+}
+
+### Submit an answer
+
+POST http://localhost:3001/api/v1/riddles/2/answers
+Content-Type: application/json
+
+{
+ "answer": "Answer"
+}

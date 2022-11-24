@@ -1,0 +1,30 @@
+.riddle-list-element {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: var(--medium-shadow);
+    padding: 0.2em 0.8em 0.8em 0.8em;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    word-break: break-word;
+}
+
+.riddle-list-element__quote--left,
+.riddle-list-element__quote--right {
+    color: #292927;
+    opacity: .6;
+    font-size: .8em;
+    position: absolute;
+}
+
+.riddle-list-element__quote--left {
+    margin-right: 0;
+    left: -9px;
+    top: 6px;
+}
+
+.riddle-list-element__quote--right {
+    right: -8px;
+    margin-left: 0;
+    bottom: 6px;
+}

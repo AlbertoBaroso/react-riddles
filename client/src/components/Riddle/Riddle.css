@@ -1,0 +1,147 @@
+.riddle,
+.riddle__answer {
+    box-sizing: content-box;
+    max-width: 28em;
+    min-width: 260px;
+    overflow-wrap: anywhere;
+    margin: auto;
+}
+
+.riddle {
+    display: inline-block;
+    max-width: 36em;
+}
+
+.riddle__question {
+    position: relative;
+    display: inline-block;
+    font-weight: 100;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.riddle__quote--left,
+.riddle__quote--right {
+    color: #292927;
+    font-size: 1.1em;
+    position: absolute;
+}
+
+.riddle__quote--left {
+    margin-right: 0;
+    right: 100%;
+    top: -2px;
+}
+
+.riddle__quote--right {
+    bottom: -10px;
+    left: 100%;
+    margin-left: 0;
+    top: auto;
+}
+
+.riddle__author {
+    line-height: 2;
+    text-align: center;
+    display: block;
+}
+
+.riddle__placeholder--small {
+    margin-top: -1.8em;
+    font-size: 0.7em;
+    font-weight: 100;
+    display: block;
+}
+
+.placeholder-wave.card-title {
+    height: 2.2rem;
+}
+
+.riddle__answer .placeholder,
+.riddle__response .placeholder {
+    cursor: pointer;
+    border-radius: 4px;
+    height: 2.2rem;
+}
+
+.form-control.riddle__answer-input {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.answer-ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.answer-ribbon span {
+    width: 62px;
+    height: 16px;
+    font-size: 0.7em;
+    font-weight: 700;
+    color: #fff;
+    background-color: red;
+    position: absolute;
+    top: 33px;
+    left: -7px;
+    text-align: center;
+    z-index: 3;
+}
+
+.answer-ribbon i:first-child, .answer-ribbon i:nth-child(2) {
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    border: 3px solid transparent;
+    border-right-color: #750707;
+    border-top-color: #750707;
+    z-index: 2;
+    top: 49px;
+    left: -7px;
+}
+
+.answer-ribbon i:nth-child(2) {
+    border-color: #750707 #750707 transparent transparent;
+    left: auto;
+    right: 0px;
+    border-right-color: transparent;
+    border-left-color: #750707;
+    z-index: 2;
+    right: -55px;
+}
+
+.answer-ribbon i:nth-child(3) {
+    bottom: -55px;
+    left: -11px;
+    position: absolute;
+    border: 5px solid #b81010;
+    z-index: 1;
+}
+
+.answer-ribbon i:nth-child(4){
+    bottom: -55px;
+    left: auto;
+    right: -61px;
+    position: absolute;
+    z-index: 1;
+    border: 6px solid #b81010   ;
+}
+
+
+@media screen and (min-width: 500px) {
+    .form-control.riddle__answer-input {
+        width: 80%;
+    }
+}
+
+particle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

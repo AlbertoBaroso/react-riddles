@@ -1,0 +1,37 @@
+:root {
+
+    --primary-bg-color: #EEEEEE;
+    --primary-text-color: #0daade;
+    --secondary-text-color: #222831;
+
+    --soft-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --medium-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    /* Alternative:
+        --primary-bg-color: #334257;
+        --secondary-bg-color: #476072;
+        --primary-text-color: #548CA8;
+        --secondary-text-color: #EEEEEE; 
+    */
+
+    --link-text-color: var(--secondary-text-color);
+    --active-link-text-color: var(--primary-text-color);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+html,
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--secondary-text-color);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.soft-shadow {
+    box-shadow: var(--soft-shadow);
+}
+
+.medium-shadow {
+    box-shadow: var(--medium-shadow);
+}

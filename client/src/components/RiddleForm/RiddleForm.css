@@ -1,0 +1,4 @@
+textarea.form-control.textarea-height {
+    min-height: 100px;
+    padding-top: 2em;
+}
